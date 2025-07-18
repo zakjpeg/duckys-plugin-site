@@ -50,6 +50,19 @@ html {
     padding-left: 10px;
     padding-right: 10px;
     cursor:pointer;
+    transition-duration: 0.3s;
+}
+
+.topmenu__logo:hover {
+    filter: brightness(0.8);
+}
+
+.topmenu__option:hover {
+    color: white;
+}
+
+.topmenu__option__special:hover {
+    background-color: rgba(4, 76, 0, 0.443);
 }
 
 .topmenu__logo {
@@ -260,6 +273,18 @@ html {
     color: var(--secondary);
     line-height: 1.6;
 }
+
+.closedprogram {
+    justify-self: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.red {
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(0 0 15px rgb(255, 0, 0));
+
+}   
 
 .contact-form {
     display: flex;
