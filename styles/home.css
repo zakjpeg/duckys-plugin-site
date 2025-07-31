@@ -480,6 +480,64 @@ font-family: "Inter", sans-serif;
 }
 
 
+.section6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.preset-subtitle {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.download-btn {
+    background-color: #1fb4562d;
+    color: var(--primary);
+    border: 1px solid #1fb45672;
+    border-radius: 100px;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #1fb45664;
+}
+
+/* Glow Animation */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 12px rgba(31, 180, 86, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(31, 180, 86, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 12px rgba(31, 180, 86, 0.4);
+  }
+}
+
+.download-btn.glow {
+  animation: glowPulse 2s infinite;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.download-btn.glow:hover {
+  transform: scale(1.05);
+  background-color: #1fb45684;
+}
+
 
 /* Font Stuff */
 
