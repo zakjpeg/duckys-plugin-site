@@ -587,7 +587,6 @@ font-family: "Inter", sans-serif;
   background-color: rgba(255, 255, 255, 0.1);
   margin: 40px 0;
 }
-
 @media screen and (max-width: 900px) {
   .section-contact {
     flex-direction: column;
@@ -620,22 +619,26 @@ font-family: "Inter", sans-serif;
   text-align: center;
 }
 
+/* Poppier subscribe button */
 .cta-button {
-  background-color: #1fb4562d;
-  color: var(--primary);
-  border: 1px solid #1fb45672;
-  border-radius: 100px;
-  padding: 14px 28px;
+  background: linear-gradient(135deg, #1fb456, #3de38d);
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 18px 36px;
   text-decoration: none;
-  font-size: 1.1rem;
   display: inline-block;
-  margin-top: 20px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 8px 25px rgba(31, 180, 86, 0.3);
+  transition: all 0.2s ease-in-out;
+  margin-top: 24px;
 }
 
 .cta-button:hover {
-  background-color: #1fb45664;
-  transform: scale(1.05);
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 10px 30px rgba(31, 180, 86, 0.4);
+  background: linear-gradient(135deg, #28c868, #53eaa0);
 }
 
 .divider {
@@ -645,21 +648,40 @@ font-family: "Inter", sans-serif;
   margin: 0 auto;
 }
 
+/* Responsive tweaks for small screens */
 @media screen and (max-width: 600px) {
   .section-contact-vertical {
-    margin-bottom: 100px;
+    margin: 80px 16px 100px;
+    gap: 30px;
   }
 
   .contact-block {
-    padding: 20px;
+    padding: 24px;
   }
 
   .cta-button {
+    width: 90%;
+    padding: 18px;
+    font-size: 1.15rem;
+  }
+
+  .contact__subtitle {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .contact-form textarea,
+  .contact-form input {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .contact-form button {
     width: 100%;
-    text-align: center;
+    font-size: 1.1rem;
+    padding: 14px;
   }
 }
-
 
 
 
