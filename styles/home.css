@@ -497,7 +497,7 @@ font-family: "Inter", sans-serif;
     max-width: 600px;
 }
 
-.download-btn {
+.dl-btn {
     background-color: #1fb4562d;
     color: var(--primary);
     border: 1px solid #1fb45672;
@@ -508,7 +508,7 @@ font-family: "Inter", sans-serif;
     transition: background-color 0.2s ease;
 }
 
-.download-btn:hover {
+.dl-btn:hover {
     background-color: #1fb45664;
 }
 
@@ -525,7 +525,7 @@ font-family: "Inter", sans-serif;
   }
 }
 
-.download-btn.glow {
+.dl-btn.glow {
   animation: glowPulse 2s infinite;
   font-size: 1.15rem;
   letter-spacing: 0.5px;
@@ -533,7 +533,7 @@ font-family: "Inter", sans-serif;
   transition: transform 0.2s ease;
 }
 
-.download-btn.glow:hover {
+.dl-btn.glow:hover {
   transform: scale(1.05);
   background-color: #1fb45684;
 }
